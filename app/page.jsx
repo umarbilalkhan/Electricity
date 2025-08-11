@@ -1,8 +1,9 @@
+
 "use client"
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 
-export default function HomePage() {
+export default function App() {
   const router = useRouter()
   const [meterId, setMeterId] = useState(1) // default Home meter
   const [readings, setReadings] = useState([])
