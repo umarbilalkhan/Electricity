@@ -55,7 +55,7 @@ export default function AddReadingPage() {
       }
 
       alert("Reading saved successfully!")
-      router.push("/")
+      router.push("/home")
     } catch (error) {
       alert("Network error: failed to save reading.")
       setIsSubmitting(false)
@@ -68,7 +68,7 @@ export default function AddReadingPage() {
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <button
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/home")}
             className="group flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm border border-white/20 rounded-xl shadow-lg hover:shadow-xl hover:bg-white/90 transition-all duration-300"
           >
             <ArrowLeft className="w-4 h-4 text-slate-600 group-hover:text-slate-800 transition-colors" />

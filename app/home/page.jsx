@@ -213,7 +213,7 @@ export default function HomePage() {
         {/* Action Cards */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div
-            onClick={() => router.push("/pages/add-reading")}
+            onClick={() => router.push("/add-reading")}
             className="group relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-700 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer hover:-translate-y-2"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -243,7 +243,7 @@ export default function HomePage() {
           </div>
 
           <div
-            onClick={() => router.push("/pages/view-history")}
+            onClick={() => router.push("/view-history")}
             className="group relative overflow-hidden bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-700 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer hover:-translate-y-2"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
