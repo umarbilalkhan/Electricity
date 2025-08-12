@@ -1,6 +1,7 @@
 // app/api/readings/route.js
 import { NextResponse } from 'next/server';
 import { neon } from '@neondatabase/serverless';
+import { log } from 'console';
 
 const sql = neon(process.env.DATABASE_URL);
 
@@ -23,7 +24,9 @@ export async function GET(request) {
       ORDER BY reading_date DESC
     `;
 
+    
     return NextResponse.json({ readings });
+
   } catch (error) {
     console.error(error);
     return NextResponse.json(
